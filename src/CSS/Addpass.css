@@ -1,0 +1,256 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+.add-pass-container{
+
+  min-height:100vh;
+
+  background:
+  linear-gradient(
+  135deg,
+  #0B0B12,
+  #161625,
+  #1d1030
+  );
+
+  display:flex;
+  flex-direction:column;
+
+  align-items:center;
+
+  padding:50px 20px;
+}
+
+
+.add-pass-header{
+
+  text-align:center;
+
+  margin-bottom:35px;
+}
+
+
+.ap-badge{
+
+  display:inline-block;
+
+  padding:8px 18px;
+
+  border-radius:30px;
+
+  background:rgba(255,77,121,.12);
+
+  color:#ff4d79;
+
+  font-size:14px;
+
+  font-weight:700;
+
+  letter-spacing:1px;
+
+  margin-bottom:18px;
+}
+
+
+.add-pass-header h2{
+
+  color:white;
+
+  font-size:50px;
+
+  font-weight:800;
+
+  margin-bottom:15px;
+}
+
+
+.add-pass-header p{
+
+  color:#bfbfc9;
+
+  font-size:18px;
+
+  max-width:600px;
+
+  margin:auto;
+
+  line-height:1.8;
+}
+
+
+
+/* FORM */
+
+.add-pass-form{
+
+  width:100%;
+
+  max-width:1000px;
+
+  background:
+  rgba(255,255,255,.06);
+
+  backdrop-filter:blur(18px);
+
+  border:1px solid rgba(255,255,255,.08);
+
+  border-radius:30px;
+
+  padding:40px;
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(2,1fr);
+
+  gap:22px;
+
+  box-shadow:
+  0 20px 60px rgba(0,0,0,.35);
+}
+
+
+
+/* Inputs */
+
+.add-pass-form input,
+.add-pass-form textarea,
+.add-pass-form select{
+
+  width:100%;
+
+  padding:16px 18px;
+
+  border:none;
+
+  outline:none;
+
+  border-radius:16px;
+
+  background:
+  rgba(255,255,255,.08);
+
+  border:1px solid
+  rgba(255,255,255,.07);
+
+  color:white;
+
+  font-size:15px;
+
+  transition:.3s;
+}
+
+
+
+.add-pass-form textarea{
+
+  resize:none;
+
+  height:110px;
+
+  grid-column:span 2;
+}
+
+
+
+.add-pass-form input:focus,
+.add-pass-form textarea:focus,
+.add-pass-form select:focus{
+
+  border:1px solid #ff4d79;
+
+  box-shadow:
+  0 0 18px rgba(255,77,121,.3);
+}
+
+
+
+.add-pass-form input::placeholder,
+.add-pass-form textarea::placeholder{
+
+  color:#cfcfcf;
+}
+
+
+.add-pass-form select option{
+
+  background:#161625;
+}
+
+
+
+/* Button */
+
+.add-pass-form button{
+
+  grid-column:span 2;
+
+  padding:18px;
+
+  border:none;
+
+  border-radius:50px;
+
+  cursor:pointer;
+
+  font-size:18px;
+
+  font-weight:700;
+
+  color:white;
+
+  background:
+
+  linear-gradient(
+  135deg,
+  #8B5CF6,
+  #EC4899
+  );
+
+  transition:.35s;
+}
+
+
+
+.add-pass-form button:hover{
+
+  transform:translateY(-5px);
+
+  box-shadow:
+  0 15px 35px
+  rgba(236,72,153,.35);
+}
+
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.add-pass-form{
+
+  grid-template-columns:1fr;
+
+  padding:25px;
+}
+
+.add-pass-form textarea{
+
+  grid-column:span 1;
+}
+
+.add-pass-form button{
+
+  grid-column:span 1;
+}
+
+.add-pass-header h2{
+
+  font-size:34px;
+}
+
+}

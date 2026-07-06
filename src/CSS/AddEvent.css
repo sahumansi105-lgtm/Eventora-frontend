@@ -1,0 +1,212 @@
+/* ===========================
+   Add Event Page
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#f5f7ff,#eef2ff,#ffffff);
+}
+
+/* Container */
+
+.add-event-container{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    background:#fff;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.add-event-header{
+    background:linear-gradient(135deg,#6c63ff,#8b5cf6,#4f46e5);
+    color:white;
+    padding:50px 40px;
+    text-align:center;
+}
+
+.ae-badge{
+    display:inline-block;
+    background:rgba(255,255,255,.18);
+    border:1px solid rgba(255,255,255,.35);
+    padding:8px 20px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:1px;
+    margin-bottom:20px;
+}
+
+.add-event-header h1{
+    font-size:38px;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.add-event-header p{
+    max-width:700px;
+    margin:auto;
+    font-size:16px;
+    opacity:.95;
+    line-height:1.7;
+}
+
+/* ===========================
+   Form
+=========================== */
+
+.add-event-form{
+    padding:40px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
+}
+
+/* Full Width */
+
+.add-event-form textarea,
+.add-event-form button{
+    grid-column:span 2;
+}
+
+/* ===========================
+   Inputs
+=========================== */
+
+.add-event-form input,
+.add-event-form select,
+.add-event-form textarea{
+    width:100%;
+    padding:15px 18px;
+    border:1px solid #ddd;
+    border-radius:14px;
+    font-size:15px;
+    background:#fafafa;
+    transition:.3s;
+    outline:none;
+}
+
+.add-event-form input:focus,
+.add-event-form select:focus,
+.add-event-form textarea:focus{
+    border-color:#6c63ff;
+    background:#fff;
+    box-shadow:0 0 12px rgba(108,99,255,.18);
+}
+
+.add-event-form textarea{
+    min-height:140px;
+    resize:vertical;
+}
+
+.add-event-form input::placeholder,
+.add-event-form textarea::placeholder{
+    color:#999;
+}
+
+/* ===========================
+   Labels
+=========================== */
+
+.add-event-form label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:15px;
+    font-weight:600;
+    color:#444;
+}
+
+/* Checkbox */
+
+.add-event-form input[type="checkbox"]{
+    width:20px;
+    height:20px;
+    accent-color:#6c63ff;
+    cursor:pointer;
+}
+
+/* ===========================
+   Date & Time Labels
+=========================== */
+
+.add-event-form label:not(:has(input[type="checkbox"])){
+    margin-bottom:-10px;
+}
+
+/* ===========================
+   Button
+=========================== */
+
+.add-event-form button{
+    padding:17px;
+    border:none;
+    border-radius:14px;
+    background:linear-gradient(135deg,#6c63ff,#4f46e5);
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.35s;
+}
+
+.add-event-form button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 15px 30px rgba(79,70,229,.35);
+}
+
+.add-event-form button:active{
+    transform:scale(.98);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:900px){
+
+.add-event-container{
+    width:95%;
+}
+
+.add-event-header{
+    padding:35px 20px;
+}
+
+.add-event-header h1{
+    font-size:30px;
+}
+
+.add-event-form{
+    grid-template-columns:1fr;
+    padding:25px;
+}
+
+.add-event-form textarea,
+.add-event-form button{
+    grid-column:span 1;
+}
+
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.form-group label{
+    font-weight:600;
+    color:#444;
+}

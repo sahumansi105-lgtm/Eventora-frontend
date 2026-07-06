@@ -1,0 +1,515 @@
+/* ================= MAIN ================= */
+
+.aboutPage{
+    background:#050505;
+    color:white;
+    overflow:hidden;
+}
+
+
+/* ================= HERO ================= */
+
+.aboutHero{
+
+    height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.75)
+    ),
+
+    url("https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+}
+
+.aboutOverlay{
+
+    width:800px;
+}
+
+.aboutOverlay h1{
+
+    font-size:28px;
+
+    color:#ff3cac;
+
+    letter-spacing:5px;
+
+    margin-bottom:20px;
+}
+
+.aboutOverlay h2{
+
+    font-size:85px;
+
+    font-weight:900;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+}
+
+.aboutOverlay p{
+
+    font-size:22px;
+
+    color:#d2d2d2;
+
+    line-height:38px;
+
+    margin-bottom:40px;
+}
+
+.aboutOverlay button{
+
+    padding:16px 40px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:linear-gradient(
+        45deg,
+        #ff3cac,
+        #784ba0
+    );
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.4s;
+}
+
+.aboutOverlay button:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 0 35px #ff3cac;
+}
+
+
+/* ================= TIMELINE ================= */
+
+.aboutTimeline{
+
+    padding:80px 8%;
+}
+
+.aboutTimeline h1{
+
+    text-align:center;
+
+    font-size:55px;
+
+    margin-bottom:60px;
+}
+
+.timelineGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+}
+
+.timelineCard{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    text-align:center;
+
+    transition:.4s;
+}
+
+.timelineCard:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+
+    0 0 35px rgba(255,60,172,.35);
+}
+
+.timelineCard h2{
+
+    font-size:45px;
+
+    color:#ff3cac;
+
+    margin-bottom:15px;
+}
+
+.timelineCard p{
+
+    color:#d8d8d8;
+
+    font-size:18px;
+}
+
+
+
+/* ================= STARS ================= */
+
+.aboutStars{
+
+    padding:80px 8%;
+}
+
+.aboutStars h1{
+
+    text-align:center;
+
+    font-size:55px;
+
+    margin-bottom:60px;
+}
+
+.starsContainer{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:35px;
+}
+
+.starCard{
+
+    position:relative;
+
+    height:400px;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.4s;
+}
+
+.starCard:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+
+    0 0 40px rgba(255,60,172,.5);
+}
+
+.starCard img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:1s;
+}
+
+.starCard:hover img{
+
+    transform:scale(1.1);
+}
+
+
+.starInfo{
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:100%;
+
+    padding:25px;
+
+    background:
+
+    linear-gradient(
+
+        transparent,
+
+        rgba(0,0,0,.9)
+
+    );
+}
+
+.starInfo h2{
+
+    font-size:28px;
+
+    margin-bottom:10px;
+}
+
+.starInfo p{
+
+    color:#ff3cac;
+
+    font-size:18px;
+}
+
+
+
+
+/* ================= STATS ================= */
+
+.aboutStats{
+
+    padding:80px 8%;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+}
+
+.statCard{
+
+    background:#111;
+
+    border-radius:25px;
+
+    padding:50px;
+
+    text-align:center;
+
+    transition:.4s;
+}
+
+.statCard:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+
+    0 0 35px rgba(255,60,172,.35);
+}
+
+.statCard h1{
+
+    font-size:60px;
+
+    color:#ff3cac;
+}
+
+.statCard p{
+
+    margin-top:10px;
+
+    color:#ccc;
+
+    font-size:20px;
+}
+
+
+
+/* ================= REVIEWS ================= */
+
+.aboutReviews{
+
+    padding:80px 8%;
+}
+
+.aboutReviews h1{
+
+    text-align:center;
+
+    font-size:55px;
+
+    margin-bottom:60px;
+}
+
+.reviewGrid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+}
+
+.reviewCard{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    transition:.4s;
+}
+
+.reviewCard:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+
+    0 0 35px rgba(255,60,172,.35);
+}
+
+.reviewCard h3{
+
+    color:#ffd700;
+
+    font-size:25px;
+}
+
+.reviewCard p{
+
+    margin:25px 0;
+
+    color:#ddd;
+
+    line-height:32px;
+
+    font-size:18px;
+}
+
+.reviewCard h4{
+
+    color:#ff3cac;
+
+    font-size:22px;
+}
+
+.reviewCard span{
+
+    color:#aaa;
+}
+
+
+
+/* ================= CTA ================= */
+
+.aboutCTA{
+
+    padding:120px 20px;
+
+    text-align:center;
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        #ff3cac,
+
+        #784ba0,
+
+        #2b86c5
+
+    );
+}
+
+.aboutCTA h1{
+
+    font-size:85px;
+
+    font-weight:900;
+
+    line-height:1.1;
+}
+
+.aboutCTA button{
+
+    margin-top:40px;
+
+    padding:18px 45px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:white;
+
+    color:black;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.4s;
+}
+
+.aboutCTA button:hover{
+
+    transform:scale(1.08);
+}
+
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.aboutOverlay h2{
+
+font-size:45px;
+
+}
+
+.aboutOverlay p{
+
+font-size:18px;
+
+}
+
+.timelineGrid{
+
+grid-template-columns:1fr;
+
+}
+
+.aboutStats{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.aboutCTA h1{
+
+font-size:45px;
+
+}
+
+}

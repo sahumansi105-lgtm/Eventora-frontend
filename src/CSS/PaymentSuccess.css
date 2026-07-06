@@ -1,0 +1,755 @@
+/* ==========================================================
+   Premium Ticket Design
+   ========================================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ==========================================================
+   Background
+========================================================== */
+
+.success-container{
+    min-height:100vh;
+    padding:50px 20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(135deg,#0f172a,#1e293b,#111827);
+
+    background-size:300% 300%;
+
+    animation:bgMove 12s ease infinite;
+}
+
+/* Animated background */
+
+@keyframes bgMove{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
+
+/* ==========================================================
+   Main Ticket
+========================================================== */
+
+.ticket-wrapper{
+
+    width:100%;
+    max-width:1250px;
+
+    display:flex;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(25px);
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+
+    0 25px 60px rgba(0,0,0,.45),
+
+    0 0 40px rgba(59,130,246,.15);
+
+    animation:fadeUp .8s ease;
+
+}
+
+/* Fade Animation */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================================
+   Left Section
+========================================================== */
+
+.ticket-left{
+
+    flex:2;
+
+    padding:45px;
+
+    background:white;
+
+    position:relative;
+
+}
+
+
+/* ==========================================================
+   Right Section
+========================================================== */
+
+.ticket-right{
+
+    flex:1;
+
+    padding:45px 35px;
+
+    background:#f8fafc;
+
+    text-align:center;
+
+    position:relative;
+
+}
+
+/* ==========================================================
+   Divider
+========================================================== */
+
+.ticket-divider{
+
+    width:2px;
+
+    background:
+
+    repeating-linear-gradient(
+
+    to bottom,
+
+    #d1d5db,
+
+    #d1d5db 12px,
+
+    transparent 12px,
+
+    transparent 24px
+
+    );
+
+}
+
+/* ==========================================================
+   Success Header
+========================================================== */
+
+.success-header{
+
+    margin-bottom:25px;
+
+}
+
+.success-header h1{
+
+    font-size:38px;
+
+    color:#16a34a;
+
+    font-weight:700;
+
+}
+
+.success-header p{
+
+    color:#64748b;
+
+    margin-top:8px;
+
+    font-size:17px;
+
+}
+
+/* ==========================================================
+   Confirmed Badge
+========================================================== */
+
+.success-badge{
+
+    display:inline-block;
+
+    padding:10px 30px;
+
+    background:linear-gradient(135deg,#22c55e,#16a34a);
+
+    color:white;
+
+    border-radius:50px;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:35px;
+
+    box-shadow:
+
+    0 10px 30px rgba(22,163,74,.35);
+
+    animation:pulse 2s infinite;
+
+}
+
+/* Badge animation */
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.06);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================================================
+   Information Cards
+========================================================== */
+
+.success-section{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    margin-bottom:25px;
+
+    border-left:6px solid #2563eb;
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.success-section:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.success-section h2{
+
+    color:#111827;
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+.success-section p{
+
+    margin:10px 0;
+
+    color:#475569;
+
+    line-height:1.7;
+
+}
+
+.success-section strong{
+
+    color:#111827;
+
+}
+
+/* ==========================================================
+   Right Title
+========================================================== */
+
+.ticket-right h2{
+
+    font-size:28px;
+
+    color:#1e293b;
+
+    margin-bottom:25px;
+
+}
+
+/* ==========================================================
+   QR Code • User Details • Buttons • Responsive
+========================================================== */
+
+
+/* ==========================================================
+   QR CODE
+========================================================== */
+
+.ticket-right img{
+
+    width:220px;
+    height:220px;
+
+    object-fit:contain;
+
+    background:#fff;
+
+    padding:18px;
+
+    border-radius:20px;
+
+    border:2px solid #e5e7eb;
+
+    box-shadow:
+        0 15px 40px rgba(37,99,235,.15);
+
+    transition:.35s;
+}
+
+.ticket-right img:hover{
+
+    transform:scale(1.05) rotate(2deg);
+
+}
+
+
+/* ==========================================================
+   User Details Card
+========================================================== */
+
+.ticket-user{
+
+    margin-top:30px;
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    text-align:left;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.08);
+
+}
+
+.ticket-user p{
+
+    margin:12px 0;
+
+    color:#475569;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+}
+
+.ticket-user strong{
+
+    color:#111827;
+
+}
+
+
+/* ==========================================================
+   Action Buttons
+========================================================== */
+
+.success-actions{
+
+    margin-top:35px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.success-actions button{
+
+    cursor:pointer;
+
+    border:none;
+
+    padding:15px 18px;
+
+    border-radius:14px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+
+/* Download */
+
+.success-actions button:nth-child(1){
+
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+
+    color:#fff;
+
+    box-shadow:
+        0 10px 25px rgba(37,99,235,.30);
+
+}
+
+.success-actions button:nth-child(1):hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 18px 40px rgba(37,99,235,.45);
+
+}
+
+
+/* View Booking */
+
+.success-actions button:nth-child(2){
+
+    background:linear-gradient(135deg,#16a34a,#15803d);
+
+    color:#fff;
+
+    box-shadow:
+        0 10px 25px rgba(22,163,74,.28);
+
+}
+
+.success-actions button:nth-child(2):hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+/* Home */
+
+.success-actions button:nth-child(3){
+
+    background:#f3f4f6;
+
+    color:#111827;
+
+}
+
+.success-actions button:nth-child(3):hover{
+
+    background:#e5e7eb;
+
+    transform:translateY(-4px);
+
+}
+
+
+/* ==========================================================
+   Decorative Circles
+========================================================== */
+
+.ticket-wrapper::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:40px;
+
+    height:40px;
+
+    background:#0f172a;
+
+    border-radius:50%;
+
+    left:-20px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+}
+
+.ticket-wrapper::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:40px;
+
+    height:40px;
+
+    background:#0f172a;
+
+    border-radius:50%;
+
+    right:-20px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+}
+
+
+/* ==========================================================
+   Ticket Glow
+========================================================== */
+
+.ticket-wrapper:hover{
+
+    box-shadow:
+        0 30px 70px rgba(0,0,0,.45),
+        0 0 60px rgba(37,99,235,.20);
+
+}
+
+
+/* ==========================================================
+   Booking Not Found
+========================================================== */
+
+.success-container button{
+
+    margin-top:20px;
+
+    padding:14px 30px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.success-container button:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+/* ==========================================================
+   Scrollbar
+========================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#3b82f6;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#e5e7eb;
+
+}
+
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:1100px){
+
+    .ticket-wrapper{
+
+        flex-direction:column;
+
+    }
+
+    .ticket-divider{
+
+        width:100%;
+        height:2px;
+
+        background:
+        repeating-linear-gradient(
+        to right,
+        #d1d5db,
+        #d1d5db 12px,
+        transparent 12px,
+        transparent 24px);
+
+    }
+
+    .ticket-left,
+    .ticket-right{
+
+        padding:35px;
+
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .success-container{
+
+        padding:25px 15px;
+
+    }
+
+    .ticket-left,
+    .ticket-right{
+
+        padding:25px;
+
+    }
+
+    .success-header h1{
+
+        font-size:30px;
+
+    }
+
+    .success-section h2{
+
+        font-size:20px;
+
+    }
+
+    .ticket-right h2{
+
+        font-size:24px;
+
+    }
+
+    .ticket-right img{
+
+        width:180px;
+        height:180px;
+
+    }
+
+}
+
+
+@media(max-width:480px){
+
+    .ticket-left,
+    .ticket-right{
+
+        padding:18px;
+
+    }
+
+    .success-header h1{
+
+        font-size:24px;
+
+    }
+
+    .success-header p{
+
+        font-size:14px;
+
+    }
+
+    .success-section{
+
+        padding:18px;
+
+    }
+
+    .success-section p{
+
+        font-size:14px;
+
+    }
+
+    .ticket-user p{
+
+        font-size:14px;
+
+    }
+
+    .ticket-right img{
+
+        width:150px;
+        height:150px;
+
+    }
+
+    .success-actions button{
+
+        font-size:14px;
+
+        padding:13px;
+
+    }
+
+}

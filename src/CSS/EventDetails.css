@@ -1,0 +1,1569 @@
+/* ==========================================
+           GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#09090F;
+    color:#fff;
+}
+
+/* ==========================================
+            MAIN CONTAINER
+========================================== */
+
+.ed-container{
+    width:100%;
+    min-height:100vh;
+    background:
+    radial-gradient(circle at top,#1d1234 0%,#0b0b12 45%,#050507 100%);
+    overflow:hidden;
+}
+
+
+/* ==========================================
+               HERO
+========================================== */
+
+.ed-hero{
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+}
+
+.ed-hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(35%);
+    transform:scale(1.05);
+}
+
+.ed-hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        180deg,
+        rgba(0,0,0,.35),
+        rgba(8,8,14,.70),
+        rgba(8,8,14,.98)
+    );
+}
+
+.ed-hero-overlay{
+
+    position:absolute;
+    z-index:5;
+
+    top:50%;
+    left:8%;
+
+    transform:translateY(-50%);
+
+    width:650px;
+}
+
+.ed-hero-overlay h1{
+
+    font-size:68px;
+    font-weight:800;
+    line-height:1.1;
+
+    margin-bottom:18px;
+
+    text-shadow:
+    0 0 25px rgba(236,72,153,.45);
+}
+
+.ed-hero-tagline{
+
+    color:#d3d3df;
+
+    font-size:19px;
+
+    line-height:1.9;
+
+    margin-bottom:30px;
+
+    max-width:620px;
+}
+
+.ed-hero-info{
+
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+
+    margin-bottom:35px;
+}
+
+.ed-hero-info span{
+
+    padding:12px 22px;
+
+    border-radius:40px;
+
+    background:
+    rgba(255,255,255,.06);
+
+    border:
+    1px solid rgba(255,255,255,.10);
+
+    backdrop-filter:blur(15px);
+
+    color:white;
+
+    font-size:15px;
+}
+
+/* ==========================================
+           HERO BUTTON
+========================================== */
+
+.ed-hero-book-btn{
+
+    padding:18px 45px;
+
+    border:none;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    background:
+    linear-gradient(
+        135deg,
+        #7C3AED,
+        #EC4899
+    );
+
+    box-shadow:
+    0 0 25px rgba(124,58,237,.40);
+
+    transition:.35s;
+}
+
+.ed-hero-book-btn:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 20px 45px rgba(236,72,153,.35);
+}
+
+/* ==========================================
+          SHARE BUTTON
+========================================== */
+
+.ed-share-btn{
+
+    position:absolute;
+
+    top:40px;
+    right:50px;
+
+    z-index:20;
+
+    width:58px;
+    height:58px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    background:
+    rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.35s;
+}
+
+.ed-share-btn:hover{
+
+    transform:scale(1.08) rotate(10deg);
+
+    background:
+    linear-gradient(
+        135deg,
+        #7C3AED,
+        #EC4899
+    );
+
+    box-shadow:
+    0 0 30px rgba(236,72,153,.45);
+}
+
+
+/* ==========================================
+             COUNTDOWN
+========================================== */
+
+.ed-countdown{
+
+    width:90%;
+
+    margin:90px auto;
+
+    text-align:center;
+}
+
+.ed-countdown h2{
+
+    font-size:42px;
+
+    margin-bottom:45px;
+}
+
+.ed-countdown-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:30px;
+}
+
+.ed-time-box{
+
+    padding:35px;
+
+    border-radius:25px;
+
+    background:
+    rgba(255,255,255,.05);
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    transition:.35s;
+}
+
+.ed-time-box:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#EC4899;
+
+    box-shadow:
+    0 20px 40px rgba(236,72,153,.18);
+}
+
+.ed-time-box h1{
+
+    font-size:55px;
+
+    color:#EC4899;
+
+    margin-bottom:10px;
+}
+
+.ed-time-box p{
+
+    color:#d5d5dd;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+}
+
+
+/* ==========================================
+             FOMO STRIP
+========================================== */
+
+.ed-fomo{
+
+    width:90%;
+
+    margin:0 auto 80px;
+
+    padding:22px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    background:
+    linear-gradient(
+        90deg,
+        #7C3AED,
+        #EC4899
+    );
+
+    animation:fomoGlow 2s infinite;
+}
+
+@keyframes fomoGlow{
+
+    0%{
+        box-shadow:0 0 0 rgba(236,72,153,0);
+    }
+
+    50%{
+        box-shadow:0 0 35px rgba(236,72,153,.35);
+    }
+
+    100%{
+        box-shadow:0 0 0 rgba(236,72,153,0);
+    }
+
+}
+
+/* ==========================================
+            COMMON SECTION
+========================================== */
+
+.ed-section,
+.ed-event-info,
+.ed-story,
+.ed-highlights{
+    width:90%;
+    max-width:1300px;
+    margin:100px auto;
+}
+
+.ed-section h2,
+.ed-event-info h2,
+.ed-story h2,
+.ed-highlights h2{
+
+    text-align:center;
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:50px;
+    color:#fff;
+}
+
+/* ==========================================
+            VIDEO SECTION
+========================================== */
+
+.ed-video{
+
+    width:100%;
+    height:650px;
+
+    border:none;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.45);
+
+    transition:.4s;
+}
+
+.ed-video:hover{
+
+    transform:scale(1.01);
+
+    box-shadow:
+    0 30px 70px rgba(236,72,153,.20);
+}
+
+.ed-no-video{
+
+    height:350px;
+
+    border-radius:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+    color:#cfcfe2;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+}
+
+/* ==========================================
+             EVENT INFO
+========================================== */
+
+.ed-info-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(270px,1fr));
+
+    gap:28px;
+}
+
+.ed-info-card{
+
+    display:flex;
+
+    gap:20px;
+
+    align-items:flex-start;
+
+    padding:28px;
+
+    border-radius:24px;
+
+    background:
+    rgba(255,255,255,.05);
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    transition:.35s;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.ed-info-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        135deg,
+        transparent,
+        rgba(236,72,153,.10)
+    );
+
+    opacity:0;
+
+    transition:.4s;
+}
+
+.ed-info-card:hover::before{
+
+    opacity:1;
+}
+
+.ed-info-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#EC4899;
+
+    box-shadow:
+    0 20px 45px rgba(236,72,153,.18);
+}
+
+.ed-info-card span{
+
+    font-size:34px;
+}
+
+.ed-info-card h4{
+
+    color:#EC4899;
+
+    margin-bottom:8px;
+
+    font-size:18px;
+}
+
+.ed-info-card p{
+
+    color:#d4d4dd;
+
+    line-height:1.7;
+}
+
+/* ==========================================
+            FEATURE GRID
+========================================== */
+
+.ed-feature-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+}
+
+.ed-feature-card{
+
+    padding:40px 30px;
+
+    border-radius:26px;
+
+    background:
+    rgba(255,255,255,.05);
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    text-align:center;
+
+    backdrop-filter:blur(20px);
+
+    transition:.4s;
+}
+
+.ed-feature-card:hover{
+
+    transform:
+    translateY(-12px);
+
+    border-color:#EC4899;
+
+    box-shadow:
+    0 20px 45px rgba(236,72,153,.22);
+}
+
+.ed-feature-card{
+
+    font-size:42px;
+}
+
+.ed-feature-card h3{
+
+    margin:20px 0 15px;
+
+    font-size:24px;
+
+    color:#fff;
+}
+
+.ed-feature-card p{
+
+    color:#cfcfda;
+
+    line-height:1.8;
+
+    font-size:15px;
+}
+
+/* ==========================================
+             ABOUT EVENT
+========================================== */
+
+.ed-story{
+
+    text-align:center;
+}
+
+.ed-story p{
+
+    max-width:900px;
+
+    margin:25px auto;
+
+    line-height:2;
+
+    color:#d2d2dc;
+
+    font-size:17px;
+}
+
+/* ==========================================
+            HIGHLIGHTS
+========================================== */
+
+.ed-highlight-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(240px,1fr));
+
+    gap:30px;
+}
+
+.ed-highlight-card{
+
+    padding:45px 25px;
+
+    border-radius:28px;
+
+    text-align:center;
+
+    background:
+    linear-gradient(
+        145deg,
+        rgba(124,58,237,.18),
+        rgba(236,72,153,.08)
+    );
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    transition:.4s;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.ed-highlight-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:150px;
+    height:150px;
+
+    background:
+    rgba(236,72,153,.18);
+
+    border-radius:50%;
+
+    top:-70px;
+    right:-70px;
+
+    filter:blur(40px);
+
+    transition:.4s;
+}
+
+.ed-highlight-card:hover{
+
+    transform:
+    translateY(-12px)
+    scale(1.03);
+
+    box-shadow:
+    0 25px 50px rgba(236,72,153,.25);
+}
+
+.ed-highlight-card:hover::before{
+
+    transform:scale(1.3);
+}
+
+.ed-highlight-card{
+
+    font-size:52px;
+}
+
+.ed-highlight-card h3{
+
+    margin-top:20px;
+
+    font-size:22px;
+
+    color:white;
+}
+
+/* ===================================================
+                    PASSES SECTION
+=================================================== */
+
+.ed-passes{
+    width:90%;
+    max-width:1400px;
+    margin:110px auto;
+    text-align:center;
+}
+
+.ed-passes h2{
+    font-size:44px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.ed-subtitle{
+    color:#b8b8c7;
+    font-size:17px;
+    margin-bottom:55px;
+}
+
+/* ===================================================
+                    PASS GRID
+=================================================== */
+
+.ed-pass-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+    gap:35px;
+}
+
+/* ===================================================
+                    PASS CARD
+=================================================== */
+
+.ed-pass-card{
+
+    position:relative;
+    overflow:hidden;
+
+    padding:35px;
+
+    border-radius:28px;
+
+    background:
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.08),
+        rgba(255,255,255,.03)
+    );
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(22px);
+
+    transition:.45s;
+
+    text-align:left;
+}
+
+/* glowing top border */
+
+.ed-pass-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:5px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #7C3AED,
+        #EC4899,
+        #FF7A18
+    );
+}
+
+/* glow */
+
+.ed-pass-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+    height:180px;
+
+    background:
+    rgba(236,72,153,.18);
+
+    border-radius:50%;
+
+    top:-80px;
+    right:-80px;
+
+    filter:blur(45px);
+
+    transition:.5s;
+}
+
+.ed-pass-card:hover{
+
+    transform:
+    translateY(-15px);
+
+    border-color:#EC4899;
+
+    box-shadow:
+    0 30px 70px rgba(236,72,153,.22);
+}
+
+.ed-pass-card:hover::after{
+
+    transform:scale(1.4);
+}
+
+/* ===================================================
+                    PASS BADGE
+=================================================== */
+
+.ed-pass-badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:40px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #7C3AED,
+        #EC4899
+    );
+
+    color:white;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    margin-bottom:22px;
+
+    letter-spacing:1px;
+}
+
+/* ===================================================
+                    PASS TITLE
+=================================================== */
+
+.ed-pass-card h3{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+}
+
+.ed-pass-card h1{
+
+    font-size:52px;
+
+    color:#EC4899;
+
+    margin-bottom:28px;
+}
+
+/* ===================================================
+                    PASS FEATURES
+=================================================== */
+
+.ed-pass-card ul{
+
+    list-style:none;
+
+    margin-bottom:35px;
+}
+
+.ed-pass-card li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:16px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+    color:#dadade;
+
+    font-size:16px;
+}
+
+.ed-pass-card li:last-child{
+    border-bottom:none;
+}
+
+/* ===================================================
+                    BOOK BUTTON
+=================================================== */
+
+.ed-book-pass-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        135deg,
+        #7C3AED,
+        #EC4899
+    );
+
+    transition:.35s;
+}
+
+.ed-book-pass-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 18px 40px rgba(236,72,153,.35);
+}
+
+/* ===================================================
+                    SOLD OUT
+=================================================== */
+
+.ed-sold-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:#424242;
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:not-allowed;
+}
+
+/* ===================================================
+                NO PASSES
+=================================================== */
+
+.ed-no-pass{
+
+    grid-column:1/-1;
+
+    padding:60px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.ed-no-pass h3{
+
+    font-size:28px;
+
+    margin-bottom:15px;
+}
+
+.ed-no-pass p{
+
+    color:#cfcfd8;
+}
+
+/* ===================================================
+            TERMS & CONDITIONS
+=================================================== */
+
+.ed-terms{
+
+    width:90%;
+    max-width:1300px;
+
+    margin:120px auto;
+}
+
+.ed-terms h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    margin-bottom:50px;
+}
+
+.ed-terms-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+}
+
+.ed-term-card{
+
+    padding:30px;
+
+    border-radius:22px;
+
+    background:
+    rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    line-height:1.8;
+
+    font-size:16px;
+
+    color:#e4e4ea;
+
+    transition:.35s;
+}
+
+.ed-term-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#EC4899;
+
+    box-shadow:
+    0 20px 40px rgba(236,72,153,.18);
+
+    background:
+    linear-gradient(
+        145deg,
+        rgba(124,58,237,.18),
+        rgba(236,72,153,.08)
+    );
+}
+
+/* ===========================================
+   RESPONSIVE DESIGN
+=========================================== */
+
+@media (max-width:1200px){
+
+.ed-hero-overlay h1{
+    font-size:3.8rem;
+}
+
+.ed-highlight-grid,
+.ed-pass-grid,
+.ed-info-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media (max-width:900px){
+
+.ed-hero{
+    height:75vh;
+}
+
+.ed-hero-overlay{
+    padding:40px 25px;
+    justify-content:flex-end;
+}
+
+.ed-hero-overlay h1{
+    font-size:2.8rem;
+}
+
+.ed-hero-tagline{
+    font-size:15px;
+    line-height:1.8;
+}
+
+.ed-hero-info{
+    gap:10px;
+}
+
+.ed-hero-info span{
+    font-size:13px;
+    padding:10px 15px;
+}
+
+.ed-share-btn{
+    top:20px;
+    right:20px;
+}
+
+.ed-countdown-grid{
+    gap:15px;
+}
+
+.ed-time-box{
+    width:110px;
+    height:110px;
+}
+
+.ed-time-box h1{
+    font-size:34px;
+}
+
+.ed-section,
+.ed-event-info,
+.ed-highlights,
+.ed-passes,
+.ed-terms{
+    padding:70px 20px;
+}
+
+.ed-highlight-grid,
+.ed-pass-grid,
+.ed-info-grid{
+    grid-template-columns:1fr;
+}
+
+.ed-video{
+    height:300px;
+}
+
+}
+
+@media (max-width:600px){
+
+.ed-hero{
+    height:70vh;
+}
+
+.ed-hero-overlay h1{
+    font-size:2.2rem;
+}
+
+.ed-hero-tagline{
+    font-size:14px;
+}
+
+.ed-hero-book-btn{
+    width:100%;
+}
+
+.ed-share-btn{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    padding:0;
+    font-size:20px;
+}
+
+.ed-share-btn span{
+    display:none;
+}
+
+.ed-countdown-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+}
+
+.ed-time-box{
+    width:100%;
+}
+
+.ed-pass-card{
+    padding:25px;
+}
+
+.ed-pass-card h3{
+    font-size:24px;
+}
+
+.ed-pass-card h2{
+    font-size:34px;
+}
+
+.ed-sticky button{
+    width:90%;
+    max-width:350px;
+}
+
+}
+
+/* ===========================================
+   STICKY BOOK BUTTON
+=========================================== */
+
+.ed-sticky{
+    position:fixed;
+    bottom:25px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:999;
+}
+
+.ed-sticky button{
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:18px 45px;
+
+    border-radius:60px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #8b5cf6,
+        #ec4899
+    );
+
+    box-shadow:
+        0 12px 35px rgba(236,72,153,.35);
+
+    transition:.35s;
+}
+
+.ed-sticky button:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 18px 50px rgba(236,72,153,.45);
+}
+
+/* ===========================================
+   SCROLLBAR
+=========================================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0b0b12;
+}
+
+::-webkit-scrollbar-thumb{
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        #8b5cf6,
+        #ec4899
+    );
+}
+
+
+/* ===========================================
+   FINAL CTA SECTION
+=========================================== */
+
+.ed-final-cta{
+    position:relative;
+    width:90%;
+    max-width:1200px;
+    margin:100px auto;
+    padding:80px 50px;
+    overflow:hidden;
+    text-align:center;
+
+    border-radius:35px;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(139,92,246,.18),
+        rgba(236,72,153,.18)
+    );
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(25px);
+
+    box-shadow:
+        0 25px 80px rgba(139,92,246,.18),
+        inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+/* glowing circles */
+
+.ed-final-cta::before{
+    content:"";
+    position:absolute;
+    width:350px;
+    height:350px;
+    top:-140px;
+    left:-120px;
+    border-radius:50%;
+
+    background:#8b5cf6;
+    filter:blur(130px);
+    opacity:.25;
+}
+
+.ed-final-cta::after{
+    content:"";
+    position:absolute;
+    width:320px;
+    height:320px;
+    right:-120px;
+    bottom:-150px;
+    border-radius:50%;
+
+    background:#ec4899;
+    filter:blur(120px);
+    opacity:.25;
+}
+
+.ed-final-cta>*{
+    position:relative;
+    z-index:2;
+}
+
+.ed-final-cta h2{
+
+    font-size:3rem;
+    font-weight:800;
+
+    margin-bottom:20px;
+
+    color:#fff;
+
+    text-shadow:
+        0 0 30px rgba(139,92,246,.45);
+}
+
+.ed-final-cta p{
+
+    max-width:700px;
+    margin:0 auto 40px;
+
+    color:#d5d7e0;
+
+    line-height:1.9;
+
+    font-size:18px;
+}
+
+/* CTA Button */
+
+.ed-final-btn{
+
+    border:none;
+    cursor:pointer;
+
+    padding:18px 48px;
+
+    border-radius:60px;
+
+    font-size:18px;
+    font-weight:700;
+
+    color:#fff;
+
+    background:
+    linear-gradient(
+        135deg,
+        #8b5cf6,
+        #ec4899
+    );
+
+    transition:.35s;
+
+    box-shadow:
+        0 15px 35px rgba(236,72,153,.35);
+}
+
+.ed-final-btn:hover{
+
+    transform:translateY(-6px) scale(1.03);
+
+    box-shadow:
+        0 20px 55px rgba(236,72,153,.45),
+        0 0 30px rgba(139,92,246,.35);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.ed-final-cta{
+
+    padding:60px 25px;
+}
+
+.ed-final-cta h2{
+
+    font-size:2rem;
+}
+
+.ed-final-cta p{
+
+    font-size:15px;
+}
+
+.ed-final-btn{
+
+    width:100%;
+    padding:16px;
+}
+
+}
+
+/* ===========================================
+   ANIMATIONS
+=========================================== */
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-8px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+@keyframes glow{
+
+0%{
+box-shadow:0 0 0 rgba(236,72,153,0);
+}
+
+50%{
+box-shadow:0 0 35px rgba(236,72,153,.45);
+}
+
+100%{
+box-shadow:0 0 0 rgba(236,72,153,0);
+}
+
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.05);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+.ed-fomo{
+    animation:pulse 2s infinite;
+}
+
+.ed-hero-book-btn{
+    animation:glow 3s infinite;
+}
+
+.ed-share-btn{
+    animation:float 3s ease-in-out infinite;
+}
+
+.ed-pass-card:hover{
+    animation:float 1.5s ease-in-out infinite;
+}
+.ed-state {
+  min-height: 45vh;
+  display: grid;
+  place-items: center;
+  color: #111827;
+}
+
+.ed-pass-card {
+  cursor: pointer;
+}
+
+.ed-pass-card.selected {
+  border: 2px solid #e11d48;
+  box-shadow: 0 18px 40px rgba(225, 29, 72, 0.18);
+}
+
+.ed-pass-card.is-sold-out {
+  opacity: 0.72;
+  cursor: not-allowed;
+}
+
+.ed-pass-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 28px;
+  padding: 0 12px;
+  margin: 12px 0;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.ed-pass-status.available {
+  color: #047857;
+  background: #d1fae5;
+}
+
+.ed-pass-status.few-left {
+  color: #b45309;
+  background: #fef3c7;
+}
+
+.ed-pass-status.sold-out {
+  color: #b91c1c;
+  background: #fee2e2;
+}
+
+.ed-pass-mrp {
+  margin-top: -10px;
+  color: #6b7280;
+  text-decoration: line-through;
+}
+
+.ed-book-pass-btn:disabled,
+.ed-sticky button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+  transform: none;
+}

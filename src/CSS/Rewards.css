@@ -1,0 +1,138 @@
+.rewards-page{
+
+    min-height:100vh;
+    padding:30px;
+    background:#0f172a;
+    color:white;
+}
+
+.rewards-page h1{
+
+    margin-bottom:25px;
+}
+
+
+.reward-top-card{
+
+    background:linear-gradient(135deg,#7c3aed,#2563eb);
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    margin-bottom:25px;
+}
+
+.reward-top-card h2{
+
+    font-size:32px;
+
+    margin-bottom:10px;
+}
+
+.reward-top-card h1{
+
+    font-size:50px;
+
+    margin:10px 0;
+}
+
+
+.progress-card{
+
+    background:#1e293b;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    margin-bottom:25px;
+}
+
+
+.reward-progress{
+
+    width:100%;
+
+    height:15px;
+
+    background:#334155;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin:15px 0;
+}
+
+
+.reward-fill{
+
+    height:100%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        #38bdf8,
+
+        #8b5cf6
+
+    );
+
+    border-radius:20px;
+
+}
+
+
+.benefits-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+    margin-bottom:25px;
+
+}
+
+
+.benefit-card{
+
+    background:#1e293b;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    transition:0.3s;
+}
+
+
+.benefit-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+.next-target,
+
+.motivation-card{
+
+    background:#1e293b;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    margin-bottom:20px;
+
+}

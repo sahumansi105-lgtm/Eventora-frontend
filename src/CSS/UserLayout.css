@@ -1,0 +1,60 @@
+/* Entire Layout */
+.user-layout {
+  min-height: 100vh;
+  background: #08122d;
+}
+
+/* Header */
+.user-layout > header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+/* Body */
+.user-body {
+  display: flex;
+}
+
+/* Fixed Sidebar */
+.user-sidebar {
+  position: fixed;
+  top: 80px;                 /* Header height */
+  left: 0;
+
+  width: 260px;
+  height: calc(100vh - 80px);
+
+  background: #0b1734;
+  border-right: 1px solid rgba(255,255,255,0.08);
+
+  overflow: hidden;          /* prevents shaking */
+  z-index: 100;
+}
+
+/* Main Area */
+.user-main {
+  margin-left: 260px;        /* same as sidebar width */
+  width: calc(100% - 260px);
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: calc(100vh - 80px);
+}
+
+/* Topbar / Welcome Back */
+.user-topbar {
+  padding: 25px 30px;
+
+  background: #101d3d;
+
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Page Content */
+.user-content {
+  padding: 30px;
+  flex: 1;
+}

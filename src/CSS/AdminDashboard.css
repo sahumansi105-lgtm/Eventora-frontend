@@ -1,0 +1,290 @@
+/* =========================
+   DASHBOARD WRAPPER
+========================= */
+
+.admin-main-wrapper {
+  min-height: 100vh;
+  padding: 30px;
+  color: #fff;
+
+  background:
+    radial-gradient(circle at top right,
+      rgba(99,102,241,.15),
+      transparent 30%),
+    radial-gradient(circle at bottom left,
+      rgba(6,182,212,.12),
+      transparent 25%);
+}
+
+/* =========================
+   PAGE TITLE
+========================= */
+
+.admin-page-heading {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  letter-spacing: .5px;
+}
+
+/* =========================
+   LOADING
+========================= */
+
+.admin-loading-box {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* =========================
+   STATS CARDS
+========================= */
+
+.admin-stats-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+  gap: 22px;
+  margin-bottom: 35px;
+}
+
+.admin-stat-card {
+
+  position: relative;
+
+  padding: 25px;
+
+  border-radius: 22px;
+
+  background:
+    rgba(255,255,255,.05);
+
+  backdrop-filter: blur(12px);
+
+  border:
+    1px solid rgba(255,255,255,.08);
+
+  overflow: hidden;
+
+  transition: .3s ease;
+}
+
+.admin-stat-card::before {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #06b6d4,
+      #6366f1,
+      #8b5cf6
+    );
+}
+
+.admin-stat-card:hover {
+
+  transform:
+    translateY(-6px);
+
+  box-shadow:
+    0 15px 30px rgba(99,102,241,.25);
+}
+
+.admin-stat-card h3 {
+
+  color: #94a3b8;
+
+  font-size: 14px;
+
+  margin-bottom: 12px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+.admin-stat-card p {
+
+  font-size: 34px;
+
+  font-weight: 800;
+
+  color: white;
+}
+
+.admin-revenue-card {
+
+  background:
+    linear-gradient(
+      135deg,
+      #7c3aed,
+      #4f46e5
+    );
+
+  border: none;
+}
+
+.admin-revenue-card::before {
+  display: none;
+}
+
+/* =========================
+   TABLE SECTION
+========================= */
+
+.admin-table-wrapper {
+
+  background:
+    rgba(255,255,255,.05);
+
+  backdrop-filter: blur(12px);
+
+  border-radius: 22px;
+
+  padding: 25px;
+
+  margin-bottom: 30px;
+
+  border:
+    1px solid rgba(255,255,255,.08);
+}
+
+.admin-section-heading {
+
+  font-size: 24px;
+
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.admin-custom-table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.admin-custom-table thead {
+
+  background:
+    rgba(255,255,255,.06);
+}
+
+.admin-custom-table th {
+
+  padding: 16px;
+
+  text-align: left;
+
+  color: #cbd5e1;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.admin-custom-table td {
+
+  padding: 16px;
+
+  color: #e2e8f0;
+
+  border-bottom:
+    1px solid rgba(255,255,255,.06);
+}
+
+.admin-custom-table tbody tr {
+
+  transition: .25s;
+}
+
+.admin-custom-table tbody tr:hover {
+
+  background:
+    rgba(99,102,241,.08);
+}
+
+/* =========================
+   STATUS BADGES
+========================= */
+
+.admin-status-badge {
+
+  padding: 7px 14px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.admin-status-badge.SUCCESS {
+
+  background:
+    rgba(34,197,94,.15);
+
+  color: #22c55e;
+}
+
+.admin-status-badge.PENDING {
+
+  background:
+    rgba(245,158,11,.15);
+
+  color: #f59e0b;
+}
+
+.admin-status-badge.FAILED {
+
+  background:
+    rgba(239,68,68,.15);
+
+  color: #ef4444;
+}
+
+/* =========================
+   LOW STOCK HIGHLIGHT
+========================= */
+
+.admin-custom-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px) {
+
+  .admin-main-wrapper {
+    padding: 20px;
+  }
+
+  .admin-page-heading {
+    font-size: 28px;
+  }
+
+  .admin-custom-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

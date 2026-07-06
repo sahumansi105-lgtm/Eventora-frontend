@@ -1,0 +1,917 @@
+/*=========================================================
+        Premium UI
+=========================================================*/
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/*=========================================================
+        BODY
+=========================================================*/
+
+body{
+
+    background:#f5f7fb;
+
+}
+
+/*=========================================================
+        MAIN CONTAINER
+=========================================================*/
+
+.booking-container{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:50px 20px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #d789ea,
+    #3258c2,
+    #c532a0,
+    #5680e3);
+
+    background-size:400% 400%;
+
+    animation:bgAnimation 15s ease infinite;
+
+}
+
+/* Animated Background */
+
+@keyframes bgAnimation{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
+/*=========================================================
+        BOOKING CARD
+=========================================================*/
+
+.booking-card{
+
+    width:100%;
+
+    max-width:950px;
+
+    background:rgba(255,255,255,.95);
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    padding:40px;
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:
+
+    0 25px 60px rgba(0,0,0,.30),
+
+    0 0 40px rgba(37,99,235,.15);
+
+    animation:cardEntry .8s ease;
+
+}
+
+/* Card Animation */
+
+@keyframes cardEntry{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================================
+        TITLE
+=========================================================*/
+
+.booking-card h1{
+
+    text-align:center;
+
+    font-size:34px;
+
+    color:#0f172a;
+
+    margin-bottom:30px;
+
+    font-weight:700;
+
+}
+
+/*=========================================================
+        EVENT IMAGE
+=========================================================*/
+
+.booking-image{
+
+    width:100%;
+
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    margin-bottom:30px;
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.20);
+
+    transition:.4s;
+
+}
+
+.booking-image:hover{
+
+    transform:scale(1.02);
+
+}
+
+/*=========================================================
+        SECTION CARD
+=========================================================*/
+
+.booking-section{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:22px;
+
+    margin-bottom:25px;
+
+    border-left:6px solid #2563eb;
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.booking-section:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/*=========================================================
+        SECTION HEADING
+=========================================================*/
+
+.booking-section h2{
+
+    color:#0f172a;
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+    font-weight:600;
+
+}
+
+/*=========================================================
+        TEXT
+=========================================================*/
+
+.booking-section p{
+
+    margin:10px 0;
+
+    color:#475569;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+}
+
+.booking-section strong{
+
+    color:#111827;
+
+}
+
+/*=========================================================
+        PROMO INPUT
+=========================================================*/
+
+.booking-input{
+
+    width:100%;
+
+    padding:14px 18px;
+
+    border-radius:12px;
+
+    border:2px solid #dbeafe;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.booking-input:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:
+
+    0 0 15px rgba(37,99,235,.20);
+
+}
+
+/*=========================================================
+        Availability • Quantity • Total Amount
+=========================================================*/
+
+
+/*=========================================================
+        AVAILABILITY STATUS
+=========================================================*/
+
+.available{
+
+    color:#16a34a;
+
+    font-weight:700;
+
+    background:#dcfce7;
+
+    padding:10px 15px;
+
+    border-radius:10px;
+
+    display:inline-block;
+
+    margin-top:10px;
+
+}
+
+.selling-fast{
+
+    color:#ea580c;
+
+    background:#ffedd5;
+
+    font-weight:700;
+
+    padding:10px 15px;
+
+    border-radius:10px;
+
+    display:inline-block;
+
+    margin-top:10px;
+
+}
+
+.few-left{
+
+    color:#dc2626;
+
+    background:#fee2e2;
+
+    font-weight:700;
+
+    padding:10px 15px;
+
+    border-radius:10px;
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    animation:blink 1.2s infinite;
+
+}
+
+.sold-out{
+
+    color:#ffffff;
+
+    background:#ef4444;
+
+    font-weight:700;
+
+    padding:10px 15px;
+
+    border-radius:10px;
+
+    display:inline-block;
+
+    margin-top:10px;
+
+}
+
+
+/* Blink Animation */
+
+@keyframes blink{
+
+    0%{
+        opacity:1;
+    }
+
+    50%{
+        opacity:.5;
+    }
+
+    100%{
+        opacity:1;
+    }
+
+}
+
+
+/*=========================================================
+        QUANTITY BOX
+=========================================================*/
+
+.qty-box{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:25px;
+
+    margin-top:15px;
+
+}
+
+
+/* Minus & Plus Button */
+
+.qty-box button{
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    color:white;
+
+    background:linear-gradient(
+    135deg,
+    #2563eb,
+    #1d4ed8);
+
+    transition:.3s;
+
+    box-shadow:
+
+    0 10px 25px rgba(37,99,235,.25);
+
+}
+
+.qty-box button:hover{
+
+    transform:scale(1.08);
+
+}
+
+.qty-box button:disabled{
+
+    background:#cbd5e1;
+
+    cursor:not-allowed;
+
+    box-shadow:none;
+
+}
+
+
+/* Quantity Number */
+
+.qty-box span{
+
+    min-width:60px;
+
+    text-align:center;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#111827;
+
+}
+
+
+/*=========================================================
+        TOTAL BOX
+=========================================================*/
+
+.total-box{
+
+    margin-top:30px;
+
+    padding:28px;
+
+    border-radius:22px;
+
+    background:linear-gradient(
+    135deg,
+    #eff6ff,
+    #dbeafe);
+
+    box-shadow:
+
+    0 15px 30px rgba(37,99,235,.10);
+
+}
+
+
+/* Individual Row */
+
+.total-box p{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin:15px 0;
+
+    color:#475569;
+
+    font-size:16px;
+
+}
+
+
+/* Row Label */
+
+.total-box span{
+
+    font-weight:500;
+
+}
+
+
+/* Row Value */
+
+.total-box strong{
+
+    color:#111827;
+
+    font-size:17px;
+
+}
+
+
+/* Final Total */
+
+.total-box h2{
+
+    margin-top:20px;
+
+    padding-top:20px;
+
+    border-top:2px dashed #93c5fd;
+
+    color:#2563eb;
+
+    font-size:30px;
+
+    text-align:right;
+
+}
+
+
+/*=========================================================
+        BOOKING RULES
+=========================================================*/
+
+.booking-section p:last-child{
+
+    margin-top:15px;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    background:#f8fafc;
+
+    border-left:4px solid #2563eb;
+
+}
+
+
+/*=========================================================
+        BENEFITS
+=========================================================*/
+
+.booking-section p strong{
+
+    color:#0f172a;
+
+}
+
+/*=========================================================
+        Terms • Payment Button • Responsive
+=========================================================*/
+
+
+/*=========================================================
+        TERMS & CONDITIONS
+=========================================================*/
+
+.booking-terms{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:12px;
+
+    margin:30px 0;
+
+    padding:18px 22px;
+
+    background:#f8fafc;
+
+    border-left:5px solid #2563eb;
+
+    border-radius:16px;
+
+    font-size:15px;
+
+    color:#334155;
+
+    line-height:1.7;
+
+}
+
+.booking-terms input{
+
+    width:20px;
+
+    height:20px;
+
+    accent-color:#2563eb;
+
+    margin-top:3px;
+
+    cursor:pointer;
+
+}
+
+
+/*=========================================================
+        CONFIRM & PAY BUTTON
+=========================================================*/
+
+.pay-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:16px;
+
+    cursor:pointer;
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8,
+        #3b82f6
+    );
+
+    background-size:250% 250%;
+
+    transition:.35s;
+
+    animation:gradientMove 5s infinite;
+
+    box-shadow:
+        0 15px 35px rgba(37,99,235,.30);
+
+}
+
+
+/* Gradient Animation */
+
+@keyframes gradientMove{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
+
+/* Hover */
+
+.pay-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 20px 40px rgba(37,99,235,.45);
+
+}
+
+
+/* Click */
+
+.pay-btn:active{
+
+    transform:scale(.98);
+
+}
+
+
+/* Disabled */
+
+.pay-btn:disabled{
+
+    background:#94a3b8;
+
+    cursor:not-allowed;
+
+    box-shadow:none;
+
+    animation:none;
+
+}
+
+
+/*=========================================================
+        LOADING BUTTON
+=========================================================*/
+
+.pay-btn:disabled::after{
+
+    content:"";
+
+}
+
+
+/*=========================================================
+        CARD HOVER
+=========================================================*/
+
+.booking-card:hover{
+
+    box-shadow:
+
+        0 35px 70px rgba(0,0,0,.30),
+
+        0 0 60px rgba(37,99,235,.20);
+
+}
+
+
+/*=========================================================
+        IMAGE EFFECT
+=========================================================*/
+
+.booking-image{
+
+    position:relative;
+
+}
+
+.booking-image:hover{
+
+    filter:brightness(1.05);
+
+}
+
+
+/*=========================================================
+        SECTION HOVER
+=========================================================*/
+
+.booking-section{
+
+    transition:
+        transform .3s,
+        box-shadow .3s;
+
+}
+
+.booking-section:hover{
+
+    box-shadow:
+
+        0 15px 35px rgba(0,0,0,.12);
+
+}
+
+
+/*=========================================================
+        RESPONSIVE
+=========================================================*/
+
+@media(max-width:900px){
+
+    .booking-card{
+
+        padding:30px;
+
+    }
+
+    .booking-image{
+
+        height:260px;
+
+    }
+
+    .booking-card h1{
+
+        font-size:30px;
+
+    }
+
+    .total-box h2{
+
+        font-size:26px;
+
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    .booking-container{
+
+        padding:20px 12px;
+
+    }
+
+    .booking-card{
+
+        padding:20px;
+
+        border-radius:20px;
+
+    }
+
+    .booking-card h1{
+
+        font-size:25px;
+
+    }
+
+    .booking-image{
+
+        height:200px;
+
+        border-radius:15px;
+
+    }
+
+    .booking-section{
+
+        padding:18px;
+
+    }
+
+    .booking-section h2{
+
+        font-size:19px;
+
+    }
+
+    .booking-section p{
+
+        font-size:14px;
+
+    }
+
+    .qty-box{
+
+        gap:15px;
+
+    }
+
+    .qty-box button{
+
+        width:45px;
+
+        height:45px;
+
+        font-size:20px;
+
+    }
+
+    .qty-box span{
+
+        font-size:24px;
+
+    }
+
+    .pay-btn{
+
+        font-size:16px;
+
+        padding:15px;
+
+    }
+
+    .booking-terms{
+
+        font-size:14px;
+
+    }
+
+    .total-box{
+
+        padding:20px;
+
+    }
+
+    .total-box h2{
+
+        font-size:24px;
+
+        text-align:center;
+
+    }
+
+}

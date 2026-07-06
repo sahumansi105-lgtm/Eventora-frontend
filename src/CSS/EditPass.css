@@ -1,0 +1,203 @@
+/* ===================================
+        EDIT PASS PAGE
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+.edit-pass-container{
+    width:95%;
+    max-width:1200px;
+    margin:35px auto;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+/* ==============================
+          HEADER
+============================== */
+
+.edit-pass-container h2{
+    background:linear-gradient(135deg,#6C63FF,#4F46E5);
+    color:#fff;
+    padding:28px;
+    text-align:center;
+    font-size:34px;
+    font-weight:700;
+    letter-spacing:.5px;
+}
+
+/* ==============================
+            FORM
+============================== */
+
+.edit-pass-form{
+    padding:35px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
+}
+
+/* ==============================
+          INPUTS
+============================== */
+
+.edit-pass-form input,
+.edit-pass-form select,
+.edit-pass-form textarea{
+
+    width:100%;
+    padding:15px 18px;
+
+    border:1px solid #ddd;
+    border-radius:12px;
+
+    background:#fafafa;
+
+    font-size:15px;
+
+    transition:.3s;
+    outline:none;
+}
+
+.edit-pass-form input:focus,
+.edit-pass-form select:focus,
+.edit-pass-form textarea:focus{
+
+    border-color:#6C63FF;
+    background:#fff;
+    box-shadow:0 0 10px rgba(108,99,255,.18);
+
+}
+
+.edit-pass-form textarea{
+
+    min-height:140px;
+    resize:vertical;
+
+}
+
+/* Full Width */
+
+.edit-pass-form textarea,
+.edit-pass-form button{
+
+    grid-column:span 2;
+
+}
+
+/* ==============================
+        PLACEHOLDER
+============================== */
+
+.edit-pass-form input::placeholder,
+.edit-pass-form textarea::placeholder{
+
+    color:#999;
+
+}
+
+/* ==============================
+          BUTTON
+============================== */
+
+.edit-pass-form button{
+
+    padding:16px;
+
+    border:none;
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#6C63FF,#4F46E5);
+
+    color:#fff;
+
+    font-size:18px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.edit-pass-form button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(79,70,229,.35);
+
+}
+
+.edit-pass-form button:active{
+
+    transform:scale(.98);
+
+}
+
+/* ==============================
+      NUMBER INPUT FIX
+============================== */
+
+.edit-pass-form input[type=number]::-webkit-inner-spin-button,
+.edit-pass-form input[type=number]::-webkit-outer-spin-button{
+
+    opacity:1;
+
+}
+
+/* ==============================
+        RESPONSIVE
+============================== */
+
+@media(max-width:900px){
+
+.edit-pass-container{
+
+    width:96%;
+
+}
+
+.edit-pass-form{
+
+    grid-template-columns:1fr;
+
+}
+
+.edit-pass-form textarea,
+.edit-pass-form button{
+
+    grid-column:span 1;
+
+}
+
+.edit-pass-container h2{
+
+    font-size:28px;
+
+}
+
+}
+
+.section-title{
+    grid-column:span 2;
+    margin-top:12px;
+    margin-bottom:-6px;
+    padding-bottom:8px;
+    border-bottom:2px solid #ececff;
+    color:#4F46E5;
+    font-size:20px;
+    font-weight:600;
+}
+
+@media(max-width:900px){
+    .section-title{
+        grid-column:span 1;
+    }
+}
