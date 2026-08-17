@@ -202,7 +202,7 @@ const fans = [
           />
 
           <div className="homeHeroOverlay">
-            <h1>EVENTROA</h1>
+            <h1>EVENTORA</h1>
             <h2>Discover. Book. Experience.</h2>
 
             <p>
