@@ -11,7 +11,7 @@
 
 ## 📖 About the Project
 
-**Pro Night** is a modern full-stack Event Management System designed to simplify event discovery, online ticket booking, secure payments, and event entry validation.
+**EVENTORA** is a modern full-stack Event Management System designed to simplify event discovery, online ticket booking, secure payments, and event entry validation.
 
 The frontend is built using **React.js** and communicates with a **Spring Boot REST API** to provide a seamless user experience. Users can browse events, book passes, complete payments through Razorpay, receive QR-based tickets, manage bookings, earn rewards, and get AI-powered event recommendations. Administrators can manage events, bookings, users, passes, revenue, and validate tickets using a QR scanner. :contentReference[oaicite:1]{index=1}
 
