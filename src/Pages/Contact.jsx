@@ -437,10 +437,6 @@ export default function Contact() {
 
     </div>
 
-
-
-    <Footer/>
-
     </>
 
   );

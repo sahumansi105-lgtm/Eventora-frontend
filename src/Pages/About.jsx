@@ -17,7 +17,7 @@ export default function About() {
     {
       name:"Arijit Singh",
       profession:"Playback Singer",
-      image:"https://images.unsplash.com/photo-1501386761578-eac5c94b800a"
+      image:"https://i.pinimg.com/1200x/d9/8b/b3/d98bb3d32d276056b392581e670540ec.jpg"
     },
 
     {
@@ -29,7 +29,7 @@ export default function About() {
     {
       name:"Zakir Khan",
       profession:"Stand-up Comedian",
-      image:"https://images.unsplash.com/photo-1500648767791-00dcc994a43d"
+      image:"https://i.pinimg.com/736x/0f/8d/2f/0f8d2f35c203e04d12e057ae8b3af3f1.jpg"
     },
 
     {
@@ -306,10 +306,6 @@ export default function About() {
 
 
     </div>
-
-
-    <Footer/>
-
     </>
 
   );

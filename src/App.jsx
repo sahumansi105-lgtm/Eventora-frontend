@@ -38,6 +38,8 @@ import Profile from "./Pages2/Profile";
 import MyTickets from "./Pages2/MyTickets";
 import Rewards from "./Pages2/Rewards";
 import Help from "./Pages/Help";
+import Footer from "./Components/Footer";
+
 
 /* ===========================
    PUBLIC LAYOUT
@@ -48,6 +50,7 @@ function PublicLayout() {
     <>
       <Header />
       <Outlet />
+      <Footer />
     </>
   );
 }

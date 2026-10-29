@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import Footer from "../Components/Footer";
 import "../CSS/Explore.css";
 
 export default function Explore() {
@@ -41,31 +40,31 @@ image:"https://media.insider.in/image/upload/c_crop,g_custom/v1756999925/m6gmdpm
 {
 name:"Arijit Singh",
 profession:"Playback Singer",
-image:"https://wallpapercave.com/wp/wp10669416.jpg"
+image:"https://i.pinimg.com/1200x/d9/8b/b3/d98bb3d32d276056b392581e670540ec.jpg"
 },
 
 {
 name:"AP Dhillon",
 profession:"Music Artist",
-image:"https://wallpapercave.com/wp/wp10832257.jpg"
+image:"https://i.pinimg.com/736x/2c/cf/28/2ccf2857ac9369d26b8e989b885d90c0.jpg"
 },
 
 {
 name:"Shreya Ghoshal",
 profession:"Singer",
-image:"https://wallpapercave.com/wp/wp6738128.jpg"
+image:"https://i.pinimg.com/736x/a1/09/2b/a1092b91790809fdb18854b77cebda2b.jpg"
 },
 
 {
 name:"Zakir Khan",
 profession:"Stand Up Comedian",
-image:"https://wallpapercave.com/wp/wp12862531.jpg"
+image:"https://i.pinimg.com/736x/0f/8d/2f/0f8d2f35c203e04d12e057ae8b3af3f1.jpg"
 },
 
 {
 name:"Alan Walker",
 profession:"DJ",
-image:"https://wallpapercave.com/wp/wp6453075.jpg"
+image:"https://i.pinimg.com/736x/bf/b7/03/bfb7036aa1a7a3cb0f5a9416c4de7b39.jpg"
 }
 
 ];
@@ -398,8 +397,6 @@ Book Tickets
 
 
 </div>
-
-<Footer/>
 
 </>
 

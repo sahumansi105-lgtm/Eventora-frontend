@@ -3,8 +3,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-
-import Footer from "../Components/Footer";
 import "../CSS/Home.css";
 
 export default function Home() {
@@ -41,31 +39,31 @@ export default function Home() {
       name: "Arijit Singh",
       profession: "Playback Singer",
       image:
-        "https://images.unsplash.com/photo-1501386761578-eac5c94b800a"
+        "https://i.pinimg.com/1200x/d9/8b/b3/d98bb3d32d276056b392581e670540ec.jpg"
     },
     {
       name: "Shreya Ghoshal",
       profession: "Singer",
       image:
-        "https://images.unsplash.com/photo-1503095396549-807759245b35"
+        "https://i.pinimg.com/736x/a1/09/2b/a1092b91790809fdb18854b77cebda2b.jpg"
     },
     {
       name: "Zakir Khan",
       profession: "Stand-up Comedian",
       image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43d"
+        "https://i.pinimg.com/736x/0f/8d/2f/0f8d2f35c203e04d12e057ae8b3af3f1.jpg"
     },
     {
       name: "Alan Walker",
       profession: "DJ & Producer",
       image:
-        "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f"
+        "https://i.pinimg.com/736x/bf/b7/03/bfb7036aa1a7a3cb0f5a9416c4de7b39.jpg"
     },
     {
       name: "Virat Kohli",
       profession: "Celebrity Guest",
       image:
-        "https://images.unsplash.com/photo-1517466787929-bc90951d0974"
+        "https://i.pinimg.com/736x/c6/de/46/c6de46d6e546e339abac9ac1c8424792.jpg"
     }
   ];
 
@@ -74,11 +72,10 @@ const fans = [
   "https://images.unsplash.com/photo-1501386761578-eac5c94b800a", // singer stage vibe
   "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4", // live concert crowd
   "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2", // audience cheering
-  "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f", // DJ / concert lights
-  "https://images.unsplash.com/photo-1521334884684-d80222895322", // festival crowd
-  "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7", // stage performance
-  "https://images.unsplash.com/photo-1464375117522-1311dd50d294", // concert lights
-  "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3"  // live music vibe
+   "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7", // stage performance
+  "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3" , // live music vibe
+    "https://images.unsplash.com/photo-1492684223066-81342ee5ff30",
+  "https://images.unsplash.com/photo-1506157786151-b8491531f063"
 ];
 
   // FETCH EVENTS
@@ -408,7 +405,7 @@ const fans = [
         </section>
       </main>
 
-      <Footer />
+     
     </>
   );
 }
